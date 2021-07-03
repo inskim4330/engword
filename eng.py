@@ -37,7 +37,7 @@ if result == 'r':
 	random_or_series = "random"
 elif result == 's':
 	random_or_series = "series"
-print(random_or_series)
+print(random_or_series + ", enter to start")
 
 count = 0
 try:
