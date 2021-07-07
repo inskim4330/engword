@@ -46,13 +46,17 @@ try:
 		if value == "":
 			os.system("clear")
 			if random_or_series == "series":
-				current_index +=1
 				print_word(current_index)
+				current_index +=1
 			elif random_or_series == "random":
 				current_index = random.randrange(max_index)
 				print_word(current_index)
 		if value == "q":
 			exit = True
+		if value == "b":
+			current_index -=1
+			print_word(current_index)
+
 except IndexError as exception:
 	print(":END:")
 
