@@ -46,7 +46,6 @@ try:
 	while exit == False:
 		value = input()
 		if value == "":
-			os.system("cls")
 			if random_or_series == "series":
 				current_index +=1
 			elif random_or_series == "random":
@@ -56,6 +55,7 @@ try:
 			exit = True
 		if value == "b":
 			current_index -= 1
+		os.system("cls")
 		print_word(current_index)
 except IndexError as exception:
 	print(":END:")
